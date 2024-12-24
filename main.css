@@ -1,0 +1,295 @@
+body {
+    background-color: rgba(20, 20, 20, 0.942);
+}
+
+
+
+
+
+  h1 {
+    font-family: "Anton", sans-serif; 
+    color: rgb(255, 89, 0);
+    font-size: 110px;
+    text-align: center;
+    margin-top: 150px;
+  }
+
+  header {
+    font-family: "Anton", sans-serif;
+    color: rgb(255, 89, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .header-left {
+    font-size: 36px; /* Adjust font size as needed */
+  }
+
+  
+  h2{
+    font-family: "Anton", sans-serif; 
+    color: rgb(255, 89, 0);
+    font-size: 36px;
+    text-align: center;
+    
+    font-weight: 100;
+  }
+
+  h3 {
+    font-family: "Anton", sans-serif; 
+    color: rgb(255, 89, 0);
+    font-size: 100px;
+    text-align: center;
+    margin-top: 400px;
+  }
+
+
+  .subh1{
+    font-family: "Noto Sans", serif; 
+    color: rgb(255, 89, 0);
+
+    font-size: 20px;
+    text-align: center;
+    font-weight:300;
+    padding-top: 150px;
+    
+  }
+
+  .subh12{
+    font-family: "Noto Sans", serif; 
+    color: rgb(255, 89, 0);
+    font-size: 20px;
+    text-align: center;
+    font-weight:300;
+    padding-top: 40px;
+
+  }
+  .containerbutton {
+    text-align: center;
+    padding-top: 100px; /* Centers the button horizontally */
+  }
+  
+  button {
+    font-family: "Anton", sans-serif; 
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 20px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+  }
+  
+   
+   button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   button:hover {
+    color: #e8e8e8;
+   }
+   
+   button:hover::before {
+    width: 100%;
+    background-color: rgb(255, 89, 0);
+   }
+
+
+   .marquee {
+    font-family: "Noto Sans", serif; 
+    font-size: 30px;
+    color: rgb(255, 89, 0);
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    width:100%;
+    z-index:10000;
+  }
+  
+  .marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    padding-top:190px;
+    animation: marquee 40s linear infinite;
+  }
+  
+  .marquee2 span {
+    animation-delay: 10s;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+  
+
+
+  .orange-line {
+    width: 100%; /* Full width of the screen */
+    height: 5px; /* Height of the line */
+    background-color: rgb(255, 89, 0); /* Orange color */
+    position: fixed; /* Keeps it fixed on the screen */
+    top: 0; /* Aligns it to the top of the screen */
+    left: 0; /* Aligns it to the left side */
+    z-index: 1000; /* Makes sure it's on top of other content */
+  }
+
+
+  .subh31{
+    font-family: "Noto Sans", serif; 
+    color: rgb(255, 89, 0);
+    font-size: 20px;
+    text-align: right;
+    font-weight:300;
+    padding-top: 40px;
+    padding-right:150px;
+  }
+
+
+  h4 {
+    font-family: "Anton", sans-serif; 
+    color: rgb(255, 89, 0);
+    font-size: 130px;
+    text-align: center;
+    margin-top: 200px;
+  }
+
+  .subh41{
+    font-family: "Noto Sans", serif; 
+    color: rgb(255, 89, 0);
+    font-size: 30px;
+    text-align: left;
+    font-weight:500;
+    padding-top: 40px;
+    padding-left:80px;
+  }
+
+  .resize-image {
+    width: 650px;  /* Adjust the width */
+    height: auto; 
+    padding-left:80px; 
+  }
+
+  .subh42{
+    font-family: "Noto Sans", serif; 
+    color: rgb(255, 89, 0);
+    font-size: 20px;
+    text-align: left;
+    font-weight:300;
+    padding-top: 150px;
+    padding-left:80px;
+  }
+
+  .container {
+    display: flex; /* Aligns elements horizontally */
+    align-items: flex-start; /* Vertically aligns the items */
+    justify-content: flex-start; /* Optional: aligns items to the left */
+  }
+
+  .container div {
+    display: flex;
+    flex-direction: column; /* Stack the paragraphs vertically */
+    margin-left: 20px; /* Optional: Adds some space between the image and the paragraphs */
+}
+
+.second-paragraph {
+    margin-top: 10px;
+    padding-top: -100px; /* Adds space between the first and second paragraph */
+}
+  
+
+.orange-box {
+    width: 100%;               /* Spans across the entire width of the screen */
+    height: 800px;             /* Height of the box */
+    background-color: rgb(255, 89, 0);  /* Orange color */
+    display: flex;  
+    margin-top:260px;           /* Enables flexbox for positioning text */
+    justify-content: center;   /* Centers the text horizontally */
+    align-items: center;       /* Centers the text vertically */
+    color: white;              /* White text color */
+    font-size: 24px;           /* Text size */
+}
+
+.orange-box p {
+    margin: 0;
+    font-family: "Anton", sans-serif; 
+    color: rgba(20, 20, 20, 0.942);
+    font-size: 100px;
+    text-align: left; 
+    margin-left:40px;                /* Removes default margins */
+}
+
+.orange-box h99 {
+    margin: 0;
+    font-family: "Anton", sans-serif; 
+    color: rgba(20, 20, 20, 0.942);
+    font-size: 10px;
+    text-align: left; 
+    margin-left:40px;                /* Removes default margins */
+}
+
+
+
+.footer {
+    display: flex;  
+    font-family: "Anton", sans-serif; 
+    font-weight:200px;
+    /* Uses flexbox for layout */
+    justify-content: space-between;  /* Space between left and right content */
+    align-items: center;         /* Vertically centers content */
+    padding: 20px;               /* Padding inside the footer */
+    background-color: black;     /* Black background */
+    color: white;                /* White text color */
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    font-size: 14px;             /* Adjusts the font size */
+}
+
+.button {
+    padding: 10px 20px;          /* Button padding */
+    background-color: transparent; /* Transparent background */
+    color: white;                /* White text */
+    border: 2px solid rgb(255, 89, 0); /* Orange outline */
+    text-decoration: none;       /* Removes underline from link */
+    border-radius: 5px;          /* Rounded corners */
+    font-weight: bold;           /* Bold text */
+    transition: all 0.3s;        /* Smooth transition */
+}
+
+.button:hover {
+    background-color: rgb(255, 89, 0);  /* Turns orange on hover */
+    color: rgba(20, 20, 20, 0.942);                        /* Text turns grey on hover */
+    border: 2px solid rgb(255, 89, 0);  /* Keeps the orange outline */
+}
